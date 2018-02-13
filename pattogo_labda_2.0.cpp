@@ -17,6 +17,7 @@ int main()
 		getmaxyx(stdscr,r,c);
 		r = r * 2 - 1;
 		c = c * 2 - 1;
+		
 		xj = (xj - 1) % c;
 		xk = (xk + 1) % c;
 
