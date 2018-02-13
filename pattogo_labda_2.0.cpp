@@ -10,12 +10,13 @@ int main()
 
 	initscr();
 	curs_set(0);
-	getmaxyx(stdscr,r,c);
-	r = r * 2 - 1;
-	c = c * 2 - 1;
+
 
 	for(;;)
 	{
+		getmaxyx(stdscr,r,c);
+		r = r * 2 - 1;
+		c = c * 2 - 1;
 		xj = (xj - 1) % c;
 		xk = (xk + 1) % c;
 
